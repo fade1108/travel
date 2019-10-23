@@ -87,6 +87,9 @@ computed: {
     height: 0;
     padding-bottom: 50%;
   }
+ .icons {
+  padding-top: .2rem;
+ }
   .icon{
     height: 0;
     position: relative;

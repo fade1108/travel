@@ -18,11 +18,7 @@ export default {
     return {
       swiperOption: {
         pagination: '.swiper-pagination',
-        loop: true,
-        autoplay: {
-          delay: 20000,
-          disableOnInteraction: false
-        }
+        loop: true
       },
       swiperList: [{
         id: '0001',
