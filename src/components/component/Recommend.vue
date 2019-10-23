@@ -20,10 +20,10 @@
 
 <script>
 export default {
-name: 'HomeRecommend',
-data () {
- return {
-   recommendList: [{
+  name: 'HomeRecommend',
+  data () {
+    return {
+      recommendList: [{
         id: '0001',
         imgUrl: 'http://img1.qunarzz.com/sight/p0/1703/3a/3a4a9641a8867671a3.img.png_200x200_9a235bb9.png',
         title: '西安城墙',
@@ -38,12 +38,13 @@ data () {
         imgUrl: 'http://img1.qunarzz.com/sight/p0/1505/18/18ffcca94b1b7ca2.water.jpg_200x200_9b0d2dc4.jpg',
         title: '长恨歌',
         critical: '小伙伴们都收藏了，去看看吧'
-      }, {id: '0004',imgUrl: 'http://img1.qunarzz.com/sight/p0/201301/11/dd368e9b8629027693835fbb.jpg_200x200_8e79864a.jpg',
+      }, {id: '0004',
+        imgUrl: 'http://img1.qunarzz.com/sight/p0/201301/11/dd368e9b8629027693835fbb.jpg_200x200_8e79864a.jpg',
         title: '西安唐乐宫',
         critical: '一流的装修，品质的享受'
-   }]
- }
-}
+      }]
+    }
+  }
 }
 </script>
 
