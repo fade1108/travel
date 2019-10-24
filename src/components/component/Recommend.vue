@@ -5,11 +5,11 @@
       <span class="title-decs">猜你喜欢</span>
     </div>
     <ul class="recommend-content">
-      <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+      <li class="item border-bottom" v-for="item of recommend" :key="item.id">
           <img class="item-img" :src="item.imgUrl">
         <div class="item-info">
           <p class="item-title">{{item.title}}</p>
-          <p class="item-critical">{{item.critical}}</p>
+          <p class="item-critical">{{item.desc}}</p>
           <p class="item-price"></p>
           <button class="item-button">查看详情</button>
         </div>
@@ -22,28 +22,10 @@
 export default {
   name: 'HomeRecommend',
   data () {
-    return {
-      recommendList: [{
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1703/3a/3a4a9641a8867671a3.img.png_200x200_9a235bb9.png',
-        title: '西安城墙',
-        critical: '触摸历史痕迹， 感受历史沧桑'
-      }, {
-        id: '0002',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1602/53/53cf6caed9f9b9ee90.img.jpg_200x200_f5476a84.jpg',
-        title: '华清宫',
-        critical: '探寻杨贵妃御汤遗址'
-      }, {
-        id: '0003',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1505/18/18ffcca94b1b7ca2.water.jpg_200x200_9b0d2dc4.jpg',
-        title: '长恨歌',
-        critical: '小伙伴们都收藏了，去看看吧'
-      }, {id: '0004',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/201301/11/dd368e9b8629027693835fbb.jpg_200x200_8e79864a.jpg',
-        title: '西安唐乐宫',
-        critical: '一流的装修，品质的享受'
-      }]
-    }
+    return {}
+  },
+  props: {
+    recommend: Array
   }
 }
 </script>
