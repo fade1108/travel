@@ -4,10 +4,12 @@
       <div class="iconfont back-icon">&#xe618;</div>
     </div>
     <div class="header-input"> <div class="iconfont mid-icon" >&#xe62e;</div>输入城市景点游玩主题</div>
+    <router-link to="/city">
     <div class="header-right">
-      {{this.city}}
+      北京
       <span class="iconfont arrow-icon">&#xe65a;</span>
     </div>
+    </router-link>
   </div>
 </template>
 
@@ -50,6 +52,7 @@ export default {
       width : 1.24rem;
       float: right;
       text-align: center;
+    color: #ffffff;
     }
   .arrow-icon{
     margin-left: -.04rem;
