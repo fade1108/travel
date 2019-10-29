@@ -5,7 +5,7 @@
       <span class="title-decs">猜你喜欢</span>
     </div>
     <ul class="recommend-content">
-      <li class="item border-bottom" v-for="item of recommend" :key="item.id">
+      <router-link tag="li" class="item border-bottom" v-for="item of recommend" :key="item.id" :to="'/detail/' + item.id">
           <img class="item-img" :src="item.imgUrl">
         <div class="item-info">
           <p class="item-title">{{item.title}}</p>
@@ -13,7 +13,7 @@
           <p class="item-price"></p>
           <button class="item-button">查看详情</button>
         </div>
-      </li>
+      </router-link>
     </ul>
   </div>
 </template>
@@ -50,6 +50,7 @@ export default {
     overflow: hidden;
     display: flex;
     height: 2.16rem;
+    color: black;
   }
   .item-img{
     width: 2rem;
